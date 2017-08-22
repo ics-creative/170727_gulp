@@ -1,16 +1,18 @@
-/**
- * Sassのコンパイルタスクのサンプルファイルです。
- */
+// Sassのコンパイルタスクのサンプルファイルです。
+
 // gulpプラグインの読み込み
-var gulp = require("gulp");
+const gulp = require('gulp');
 // Sassをコンパイルするプラグインの読み込み
-var sass = require("gulp-sass");
+const sass = require('gulp-sass');
 
 // style.scssをタスクを作成する
-gulp.task("default", function () {
-  gulp.src("css/style.scss")  // style.scssファイルを取得
+gulp.task('default', function () {
+  // style.scssファイルを取得
+  gulp.src('css/style.scss')
+    // Sassのコンパイルを実行
     .pipe(sass({
-      outputStyle: "expanded"
-    }))  // Sassのコンパイルを実行
-    .pipe(gulp.dest("css"));  // cssフォルダー以下に保存
+      outputStyle: 'expanded'
+    }))
+    // cssフォルダー以下に保存
+    .pipe(gulp.dest('css'));
 });
