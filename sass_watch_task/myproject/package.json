@@ -2,6 +2,10 @@
   "private": true,
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.38.0"
+  },
+  "scripts": {
+    "start": "gulp"
   }
 }
