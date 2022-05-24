@@ -6,9 +6,9 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
 // style.scssの監視タスクを作成する
-gulp.task('default', function () {
+gulp.task('default', () => {
   // ★ style.scssファイルを監視
-  return gulp.watch('css/style.scss', function () {
+  return gulp.watch('css/style.scss', () => {
     // style.scssの更新があった場合の処理
 
     // style.scssファイルを取得
@@ -19,7 +19,7 @@ gulp.task('default', function () {
       })
       // Sassのコンパイルエラーを表示
       // (これがないと自動的に止まってしまう)
-        .on('error', sass.logError))
+      .on('error', sass.logError))
       // cssフォルダー以下に保存
       .pipe(gulp.dest('css'));
   });

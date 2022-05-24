@@ -4,7 +4,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
 // style.scssをタスクを作成する
-gulp.task('default', function () {
+gulp.task('default',  () => {
   // style.scssファイルを取得
   return gulp.src('css/style.scss')
   // Sassのコンパイルを実行
