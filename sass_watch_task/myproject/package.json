@@ -3,7 +3,7 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.52.1"
+    "sass": "^1.59.3"
   },
   "scripts": {
     "start": "gulp"
